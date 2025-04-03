@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="coneApp">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cone Information</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="./src/cone.js"></script> <!-- Thêm file cone.js vào -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body ng-controller="ConeController">
+
+  <div class="container">
+    <h3>Cone Information</h3>
+
+    <div class="input">
+      <label for="radius">Nhập bán kính (Radius):</label>
+      <input type="number" id="radius" ng-model="radius" ng-change="updateCone()" placeholder="Nhập bán kính">
+    </div>
+
+    <div class="input">
+      <label for="height">Nhập chiều cao (Height):</label>
+      <input type="number" id="height" ng-model="height" ng-change="updateCone()" placeholder="Nhập chiều cao">
+    </div>
+
+    <div class="output">
+      <table>
+        <tr>
+          <td class="label">Slant height</td>
+          <td class="value">{{slantHeight()}}</td>
+        </tr>
+        <tr>
+          <td class="label">Lateral surface area</td>
+          <td class="value">{{lateralSurfaceArea()}}</td>
+        </tr>
+        <tr>
+          <td class="label">Base area</td>
+          <td class="value">{{baseArea()}}</td>
+        </tr>
+        <tr>
+          <td class="label">Total surface area</td>
+          <td class="value">{{totalSurfaceArea()}}</td>
+        </tr>
+        <tr>
+          <td class="label">Volume</td>
+          <td class="value">{{volume()}}</td>
+        </tr>
+      </table>
+    </div>
+    
+
+  <script src="app.js"></script>
+</body>
+
+</html>

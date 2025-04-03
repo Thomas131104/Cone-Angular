@@ -1,0 +1,19 @@
+{
+  "name": "angular1",
+  "version": "1.0.0",
+  "main": "app.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jsdoc": "^4.0.4"
+  }
+}

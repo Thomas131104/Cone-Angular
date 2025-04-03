@@ -1,0 +1,5 @@
+# Loại bỏ tệp
+package-lock.json
+
+# Loại bỏ thư mục
+/node_modules
